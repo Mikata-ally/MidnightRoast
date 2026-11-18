@@ -2,28 +2,28 @@
     color: #D2B450 ;
     font-size: 1.1rem;
 }
-.form1 {
+body.contact-page .form1 {
     padding-top: 7rem;
     margin: 2rem 10rem;
     height: 700px;
 }
-.form1 h1 {
+body.contact-page .form1 h1 {
     font-family: 'Inria Serif', sans-serif;
     font-weight: bold; font-size: 5rem;
     margin: 0; margin-top: 5rem;
 }
-.text {
+body.contact-page .detail-box .text {
     display: flex;
     justify-content: space-evenly;
 }
-.container1 {
+body.contact-page .container1 {
     width: 100%;
     display: flex;
     gap: 2rem;
     margin-bottom: 2rem;
 }
-.box { width: 100%; }
-.box input {
+body.contact-page .box { width: 100%; }
+body.contact-page .box input {
     width: 100%; 
     padding: 1rem 0.5rem;
     box-sizing: border-box;
@@ -31,18 +31,18 @@
     border: 1px solid #17140F;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
 }
-.box h2 {
+body.contact-page .box h2 {
     font-family: 'Inria Serif', sans-serif;
     font-weight: bold; font-size: 1.5rem; color: #782E2E;
     letter-spacing: 5px;
 }
-.container2 {
+body.contact-page .form1 .container2 {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
-.container2 textarea {
+body.contact-page .form1 .container2 textarea {
     max-width: 100%; height: 200px;
     padding: 1rem 0.5rem;
     resize: none; box-sizing: border-box;
@@ -50,7 +50,7 @@
     background-color: transparent;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
 }
-.container2 button {
+body.contact-page .form1 .container2 button {
     padding: 2rem;
     background-color: #200001;
     color: white;
@@ -61,52 +61,52 @@
     transition: transform 0.2s ease, box-shadow 0.4s ease;
     transform-origin: center;
 }
-button:hover {
+body.contact-page button:hover {
     transform: scale(1.02); 
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
     color: #ffc919;
 }
-input::placeholder, 
-textarea::placeholder {
+body.contact-page input::placeholder, 
+body.contact-page textarea::placeholder {
     font-family: 'Inria Sans', sans-serif;
     font-weight: bold; font-size: 1rem; color: #200001d2;
     letter-spacing: 3px;
 }
 
-.sec1 {
+body.contact-page .sec1 {
     height: 500px; 
     margin: 2rem 10rem;
 }
-.detail-box {
+body.contact-page .detail-box {
     display: flex;
     justify-content: space-between;
     height: 70%; width: 100%; box-sizing: border-box;
     border: 4px solid #200001; border-radius: 4rem; 
 }
-.detail-box img {
+body.contact-page .detail-box img {
     margin: 1rem 3rem;
     width: auto; height: 100%;
 }
-.container3 {
+body.contact-page .container3 {
     max-height: 100%;
     align-content: center;
     margin: 1rem 3rem;
 }
-.container3 h2 {
+body.contact-page .container3 h2 {
     font-family: 'Inria Serif', sans-serif;
     font-weight: bold; font-size: 3rem; color: #782E2E;
     margin: 0;
 }
-.container3 h3 {
+body.contact-page .container3 h3 {
     font-family: 'Inria Sans', sans-serif;
     font-weight: bold; font-size: 2rem; color: #782E2E;
     margin: 0;
 }
-.container3 p {
+body.contact-page .container3 p {
     font-family: 'Nova Flat', sans-serif;
     font-weight: bold; font-size: 1rem;  
 }
-.container3 i {
+body.contact-page .container3 i {
   color: #9b7123;
   font-size: 1.5rem;
   margin: 0.5rem;

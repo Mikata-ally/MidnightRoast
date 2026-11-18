@@ -2,7 +2,7 @@
     color: #D2B450 ;
     font-size: 1.1rem;
 }
-.sec1 {
+body.home-page .sec1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,24 +17,24 @@
     clip-path: polygon(76% 0, 100% 0, 100% 100%, 53% 100%);
     z-index: -1; overflow: hidden;
 }
-.container1 {
+body.home-page .container1 {
     margin: 10rem;
     width: 500px;
     z-index: 1;
 }
-.container1 h2 {
+body.home-page .container1 h2 {
     font-family: 'Inria Sans', sans-serif;
     font-weight: 500; font-size: 18px; letter-spacing: 5px;
     color: #782E2E;
     margin: 0;
 }
-.container1 h1 {
+body.home-page .container1 h1 {
     font-family: 'Inria Serif', sans-serif;
     font-weight: bold; font-size: 138px; 
     color: #17140F;
     margin: 0; margin-bottom: -40px;
 }
-.container1 p {
+body.home-page .container1 p {
     font-family: 'Inria Sans', sans-serif;
     font-weight: bold; font-size: 26px;
     color: #7A786D;
@@ -64,54 +64,54 @@
     margin-right: 10rem;
 }
 
-.sec2 {
+body.home-page .sec2 {
     height: 800px; 
     margin-top: -50px;
-    background-image: url('img/winery.png');
+    background-image: url('../img/winery.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.sec2 h2 {
+body.home-page .sec2 h2 {
     text-align: center;   
     font-family: 'Inria Serif', sans-serif;
     font-size: 3rem; color: white;
 }
-.sec2 h3 {
+body.home-page .sec2 h3 {
     margin-top: -30px;
     text-align: center;
     font-family: 'Inria Sans', sans-serif;
     font-size: 1.5rem; font-weight: 400; color: white; 
 }
 
-.sec3 {
+body.home-page .sec3 {
     height: 1050px;
     justify-items: center;
     align-content: center;
 }
-.text {
+body.home-page .text {
     padding: 20px;
     text-align: center;
     width: 60%; 
 }
-.text h2 {
+body.home-page .text h2 {
     font-family: 'Inria Serif', sans-serif;
     font-size: 2rem; color: #9b7123;
     margin: 0%;
 }
-.text p {
+body.home-page .text p {
     font-family: 'Inria Sans', sans-serif;
     font-size: 1rem; font-weight: 600; color: #782E2E; 
 }
-.container2 {
+body.home-page .sec3 .container2 {
     display: flex; 
     justify-content: space-evenly;
     gap: 15rem;
 }
-.box {
+body.home-page .sec3 .box {
     width: 20rem; height: auto;
 }
-.box img {
+body.home-page .sec3 .box img {
     box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.4);
     border: 3px  solid #782E2E;
     margin-bottom: 1.5rem;
@@ -120,17 +120,17 @@
 
     transition: transform 0.3s ease;
 }
-.box img:hover {
+body.home-page .sec3 .box img:hover {
     border: 3px solid #9b7123;
     box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.4);
     transform: scale(1.05); 
 }
-.box a {
+body.home-page .sec3 .box a {
     font-family: 'Inria Sans', sans-serif;
     font-size: 20px; font-weight: 500; color: #782E2E; 
     text-decoration: none;
 }
-.box a:hover {
+body.home-page .sec3 .box a:hover {
     text-decoration: underline;
 }
 .circle-wrap {
@@ -207,37 +207,37 @@
   to { transform: rotate(360deg); }
 }
 
-.sec4 {
+body.home-page .sec4 {
     height: 900px;
     background: linear-gradient(to bottom, #200001, #46201F);
     border-top-left-radius: 2rem; border-top-right-radius: 2rem;
 }
-.container3 {
+body.home-page .sec4 .container3 {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     width: 100%;
 }
-.container3 img {
+body.home-page .sec4 .container3 img {
     height: 100%;
     width: 50%;
     max-width: 70%;
     object-fit: cover;
     border-top-left-radius: 2rem;
 }
-.container3 div {
+body.home-page .sec4 .container3 div {
     width: 50%;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.container3 h3 {
+body.home-page .sec4 .container3 h3 {
     font-family: 'Inria Serif', sans-serif;
     font-weight: 500; font-size: 68px; color: white;
     text-align: center; margin: 5rem;
 }
-.container3 button{
+body.home-page .sec4 .container3 button{
     padding: 20px 35px;
     width: 20rem;
 }
