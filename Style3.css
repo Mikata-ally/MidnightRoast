@@ -1,0 +1,124 @@
+#Store {
+    color: #D2B450 ;
+    font-size: 1.1rem;
+}
+.sec1 {
+    height: 120vh;
+    margin: 1rem 4rem;
+}
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    height: 70%; width: 100%;
+}
+.container1 h1 {
+    font-family: 'Inria Serif', sans-serif;
+    font-weight: bold; font-size: 5rem;
+    margin: 0; margin-top: 1rem;
+}
+.box1 {
+    height: 100%; width: 100%;
+    overflow: hidden;
+    border: 4px solid #9b7123;
+}
+.box1 img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+.container2 {
+    width: 100%; height: auto;
+    display: flex;
+    align-items: center;
+}
+.container2 img {
+    justify-content: start;
+    margin: 2rem 3rem;
+    width: 20%; height: auto;
+    border-radius: 50%;
+}
+.box2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 6rem;
+    gap: 3rem;
+}
+.box2 h2{
+    margin: 0rem 5rem;
+    font-family: 'Inria Serif', sans-serif;
+    font-weight: 500; font-size: 3rem;
+}
+.box2 p{
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 500; font-size: 2.5rem;
+    margin: 0;
+}
+.box2 i{
+  color: #9b7123;
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+
+.sec2 {
+    height: 110vh;
+    background: linear-gradient(#200001, #46201F);
+}
+.envelop1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.envelop1 p {
+    text-align: center;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 200; font-size: 2rem; color: white;
+    width: 70%; margin: 0;
+}
+.box3 {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+}
+.box3 h2 {
+    font-family: 'Inria Serif', sans-serif;
+    font-weight: 500; font-size: 2.5rem; color: #FFC919;
+}
+.lineV {
+    margin: 3rem;
+    background: #FFC919;
+    width: 15rem; height: 3px;
+}
+.envelop2 {
+    display: flex;
+    width: 100%; margin: 5rem 0;
+    justify-content: space-evenly;
+}
+.box4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.box4 h2 {
+    font-family: 'Inria Serif', sans-serif;
+    font-weight: 500; font-size: 2.5rem; color: #FFC919;
+}
+.box4 h3 {
+    font-family: 'Inria Serif', sans-serif; text-align: center;
+    font-weight: 500; font-size: 2rem; color: white;
+    width: 70%; margin: 0;
+}
+.lineH {
+    background: white;
+    width: 3px; height: 42rem;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
