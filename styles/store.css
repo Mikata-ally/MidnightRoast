@@ -2,18 +2,18 @@
     color: #D2B450 ;
     font-size: 1.1rem;
 }
-.sec1 {
+body.store-page .sec1 {
     height: 120vh;
     margin: 1rem 4rem;
 }
-.container1 {
+body.store-page .container1 {
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
     height: 70%; width: 100%;
 }
-.container1 h1 {
+body.store-page .container1 h1 {
     font-family: 'Inria Serif', sans-serif;
     font-weight: bold; font-size: 5rem;
     margin: 0; margin-top: 1rem;
@@ -29,12 +29,12 @@
     object-position: center;
     
 }
-.container2 {
+body.store-page .container2 {
     width: 100%; height: auto;
     display: flex;
     align-items: center;
 }
-.container2 img {
+body.store-page .container2 img {
     justify-content: start;
     margin: 2rem 3rem;
     width: 20%; height: auto;
@@ -62,7 +62,7 @@
   margin: 0.5rem;
 }
 
-.sec2 {
+body.store-page .sec2 {
     height: 110vh;
     background: linear-gradient(#200001, #46201F);
 }

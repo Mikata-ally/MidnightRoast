@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="Style4.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap" rel="stylesheet">
@@ -12,19 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midnight Roast</title>
 </head>
-<body bgcolor="#FFF9F2">
-    <header>
-        <div class="Logo"><a href="main-page.html"><img src="img/logo.png" alt="Logo"></a></div>
-        <nav id="header">
-            <ul class="menu">
-                <li><a href="main-page.html">HOME</a></li>
-                <li><a href="our-story.html">OUR STORY</a></li>
-                <li><a href="store.html">STORE</a></li>
-                <li><a href="contact-us.html" id="contact">CONTACT US</a></li>
-                <li><a href="#"><i class="fa fa-shopping-cart"><!--icon--></i></a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="contact-page" data-root="../" data-active-page="contact">
+    <div data-component="header"></div>
 
 <main>
     <form class="form1">
@@ -54,19 +43,16 @@
             <p><i class="fa-solid fa-envelope"></i>midnightroast@gmail.com</p>
             <p><i class="fa-solid fa-phone"></i>(63+)993-144-9005</p>
             </div>
-            <img src="img/wine.png" alt="wine">
+            <img src="../img/wine.png" alt="wine">
         </div>
     </section>
 
-    <footer>
-        <nav>
-            © 2026 <a href="main-page.html">MidnightRoast</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Refund Policy</a>
-            <a href="#">Shipping Policy</a>
-        </nav>
-    </footer>
+    <div data-component="footer"></div>
 </main>
+<div data-component="auth-modal"></div>
+<script src="../components/components.js" defer></script>
+    <script src="../scripts/index.js" defer></script>
 </body>
 </html>
+
+

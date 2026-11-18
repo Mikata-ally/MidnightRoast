@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="Style3.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/store.css">
     <link href="https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap" rel="stylesheet">
@@ -12,28 +12,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midnight Roast</title>
 </head>
-<body bgcolor="#FFF9F2">
-    <header>
-        <div class="Logo"><a href="main-page.html"><img src="img/logo.png" alt="Logo"></a></div>
-        <nav id="header">
-            <ul class="menu">
-                <li><a href="main-page.html">HOME</a></li>
-                <li><a href="our-story.html">OUR STORY</a></li>
-                <li><a href="store.html" id="Store">STORE</a></li>
-                <li><a href="contact-us.html">CONTACT US</a></li>
-
-                <li><a href="#"><i class="fa fa-shopping-cart"><!--icon--></i></a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="store-page" data-root="../" data-active-page="store">
+    <div data-component="header"></div>
     <main>
         <section class="sec1">
             <div class="container1">
                 <h1>Visit our Winery</h1>
-                <div class="box1"> <img src="img/Store.png" alt="Store"> </div>
+                <div class="box1"> <img src="../img/Store.png" alt="Store"> </div>
             </div>
             <div class="container2">
-                <img src="img/map.png" alt="map">
+                <img src="../img/map.png" alt="map">
                 <div class="box2">
                     <h2>Our Winery & Tasting Room</h2>
                     <p> <i class="fa-solid fa-location-dot"></i>Midnight Roast Wine Shop<br>
@@ -46,7 +34,7 @@
             <div class="envelop1">
                 <div class="box3"><div class="lineV"></div><h2>OUR SHOP & PURPOSE</h2><div class="lineV"></div></div>
                 <p>To offer a welcoming destination for discovering quality wines,
-                <br> appreciating craftsmanship, and celebrating life’s meaningful occasions responsibly.</p>
+                <br> appreciating craftsmanship, and celebrating lifeâ€™s meaningful occasions responsibly.</p>
             </div>
             <div class="envelop2">
                 <div class="box4">
@@ -72,15 +60,12 @@
                 </div>
             </div>
         </section>
-    <footer>
-        <nav>
-            © 2026 <a href="main-page.html">MidnightRoast</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Refund Policy</a>
-            <a href="#">Shipping Policy</a>
-        </nav>
-    </footer>
+    <div data-component="footer"></div>
     </main>
+    <div data-component="auth-modal"></div>
+    <script src="../components/components.js" defer></script>
+    <script src="../scripts/index.js" defer></script>
 </body>
 </html>
+
+

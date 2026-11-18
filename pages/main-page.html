@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="Style1.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/home.css">
     <link href="https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap" rel="stylesheet">
@@ -13,21 +13,8 @@
     <title>Midnight Roast</title>
     <meta name="description" content="this is our website for our project in our PA1... this website includes a non exisisting product of wine called Midnight Roast">
 </head>
-<body bgcolor="#FFF9F2" >
-    <header>
-        <div class="Logo"><a href="main-page.html"><img src="img/logo.png" alt="Logo"></a></div>
-        <nav id="header">
-            <ul class="menu">
-                <li><a href="main-page.html" id="home">HOME</a></li>
-                <li><a href="our-story.html">OUR STORY</a></li>
-                <li><a href="store.html">STORE</a></li>
-                <li><a href="contact-us.html">CONTACT US</a></li>
-
-                <li><a href="#"><i class="fa fa-shopping-cart"><!--icon--></i></a></li>
-            </ul>
-            
-        </nav>
-    </header>
+<body class="home-page" data-root="../" data-active-page="home">
+    <div data-component="header"></div>
 <main>
     <section class="sec1">
         <div class="triangle" aria-hidden="true"></div>
@@ -38,7 +25,7 @@
 
             <button class="btn-shop">EXPLORE OUR COLLECTION</button>
         </div>
-        <img src="img/wine.png" alt="bottle-wine" class="wine-img">
+        <img src="../img/wine.png" alt="bottle-wine" class="wine-img">
     </section>
 
     <section class="sec2">  
@@ -57,16 +44,16 @@
         </div>
         <div class="container2" >
             <div class="box" data-color="#782E2E" data-text="Midnight Red">
-                <a href=""><img src="img/red.png" alt="bottle-wine-Red/flavor"></a>
-                <a href="">Midnight Red 1968 <br>₱ 3,670</a>
+                <a href="store.html"><img src="../img/red.png" alt="bottle-wine-Red/flavor"></a>
+                <a href="">Midnight Red 1968 <br>â‚± 3,670</a>
             </div>
             <div class="box" data-color="#fff" data-text="After Dark Reserve">
-                <a href=""><img src="img/dark.png" alt="Dark"></a>
-                <a href="">After Dark Reserve 1933 <br>₱ 6,185</a>
+                <a href="store.html"><img src="../img/dark.png" alt="Dark"></a>
+                <a href="">After Dark Reserve 1933 <br>â‚± 6,185</a>
             </div>
-            <div class="box" data-color="#b87389" data-text="Moonlit Rosé">
-                <a href=""><img src="img/rose.png" alt="Rose"></a>
-                <a href="">Moonlit Rosé 1936 <br>₱ 4,420</a>
+            <div class="box" data-color="#b87389" data-text="Moonlit RosÃ©">
+                <a href="store.html"><img src="../img/rose.png" alt="Rose"></a>
+                <a href="">Moonlit RosÃ© 1936 <br>â‚± 4,420</a>
             </div>
         </div>
         <div class="circle-wrap" id="circle">
@@ -83,7 +70,7 @@
 
     <section class="sec4">
         <div class="container3">
-            <img src="img/wines.png" alt="wines">
+            <img src="../img/wines.png" alt="wines">
             <div>
             <h3>From intimate date nights to lively celebrations, discover wines that bring flavor and beauty to every occasion.</h3>
             <button class="btn-shop">Shop Now</button>
@@ -91,43 +78,15 @@
         </div>
     </section>
 
-    <footer>
-        <nav>
-            © 2026 <a href="main-page.html">MidnightRoast</a>
-            <a href="">Terms of Service</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Refund Policy</a>
-            <a href="#">Shipping Policy</a>
-        </nav>
-    </footer>
+    <div data-component="footer"></div>
 </main>
 
+<div data-component="auth-modal"></div>
+
 <!--JS-->
-<script>
-const circleText = document.getElementById('circleText');
-
-document.querySelectorAll('.box img').forEach(img => {
-    img.addEventListener('mouseenter', function() {
-        const box = this.closest('.box');
-        const color = box.getAttribute('data-color');
-        const text = box.getAttribute('data-text');
-        
-        document.querySelector('.wave2').style.background = color;
-        
-        circleText.textContent = text;
-        circleText.classList.add('show');
-    });
-
-    img.addEventListener('mouseleave', function() {
-        
-        document.querySelector('.wave1').style.background = '#371146';
-        document.querySelector('.wave2').style.background = '#542268';
-        document.querySelector('.wave3').style.background = 'linear-gradient(135deg, rgba(210,180,80,.6), rgba(120,46,46,.5))';
-
-        
-        circleText.classList.remove('show');
-    });
-});
-</script>
+<script src="../components/components.js" defer></script>
+    <script src="../scripts/index.js" defer></script>
 </body>
 </html>
+
+
