@@ -41,6 +41,7 @@ body.home-page .container1 p {
     margin: 30; margin-top: 3rem;
 }
 .btn-shop {
+    display: inline-block;
     margin: 25px;
     border: none; 
     padding: 30px 20px;
@@ -49,6 +50,7 @@ body.home-page .container1 p {
     color: white; font-size: 1rem; letter-spacing: 5px;
     font-family: 'Inria Sans', sans-serif;
     cursor: pointer;
+    text-decoration: none;
 
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     transform-origin: center;

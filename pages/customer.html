@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Account | Midnight Roast</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/shop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="account-page customer-page" data-root="../" data-active-page="customer">
+    <div data-component="header"></div>
+    <main class="account-main">
+        <section class="account-welcome">
+            <div><p class="shop-kicker">CUSTOMER ACCOUNT</p><h1>Welcome back</h1><p id="customer-email"></p></div>
+            <button class="account-button" id="sign-out" type="button">Sign out</button>
+        </section>
+        <section class="customer-summary">
+            <article><span>Cart items</span><strong id="cart-count">0</strong></article>
+            <article><span>Demo orders</span><strong>2</strong></article>
+            <article><span>Account status</span><strong>Active</strong></article>
+        </section>
+        <section class="customer-section">
+            <div class="section-title"><div><p class="shop-kicker">PICKED FOR YOU</p><h2>Explore the collection</h2></div><a href="wines.html">Public collection</a></div>
+            <div class="wine-grid wine-grid--compact" id="customer-wine-grid"></div>
+        </section>
+        <section class="customer-section cart-section" id="cart">
+            <div class="section-title"><div><p class="shop-kicker">YOUR SELECTION</p><h2>Shopping cart</h2></div></div>
+            <div id="customer-cart" class="customer-cart"></div>
+        </section>
+    </main>
+    <div data-component="footer"></div>
+    <div data-component="auth-modal"></div>
+    <script src="../components/components.js" defer></script>
+    <script src="../scripts/index.js" defer></script>
+    <script src="../scripts/data.js" defer></script>
+    <script src="../scripts/customer.js" defer></script>
+</body>
+</html>

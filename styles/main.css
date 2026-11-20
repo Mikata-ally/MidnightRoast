@@ -159,19 +159,41 @@ header .fa-shopping-cart:hover {
     font-family: 'Inria Serif', serif;
     font-size: 2rem;
 }
-.auth-modal__actions {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1.75rem;
+.auth-modal__email-form {
+    display: grid;
+    gap: .65rem;
+    margin-top: 1.5rem;
+    text-align: left;
+}
+.auth-modal__email-form label {
+    color: #46201F;
+    font-weight: 700;
+}
+.auth-modal__email-form input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: .85rem 1rem;
+    border: 1px solid #9b7123;
+    border-radius: .35rem;
+    background: #fff;
+    color: #17140F;
+    font: inherit;
 }
 .auth-modal__button {
-    min-width: 7rem;
+    display: inline-flex;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: .65rem;
     padding: .8rem 1.2rem;
     border: 1px solid #46201F;
     border-radius: .35rem;
     color: #46201F;
+    background: transparent;
+    font: inherit;
     text-decoration: none;
+    cursor: pointer;
     transition: background-color .2s ease, color .2s ease;
 }
 .auth-modal__button--primary,
@@ -181,6 +203,31 @@ header .fa-shopping-cart:hover {
 }
 .auth-modal__button--primary:hover {
     background: #782E2E;
+}
+.auth-modal__divider {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin: 1rem 0;
+    color: #7A786D;
+}
+.auth-modal__divider::before,
+.auth-modal__divider::after {
+    height: 1px;
+    flex: 1;
+    background: #d8cfc2;
+    content: "";
+}
+.auth-modal__status {
+    min-height: 1.25rem;
+    margin: .8rem 0 0;
+    color: #782E2E;
+    font-size: .9rem;
+}
+.auth-modal__signup-note {
+    margin-bottom: 0;
+    color: #7A786D;
+    font-size: .9rem;
 }
 footer {
     display: flex;
