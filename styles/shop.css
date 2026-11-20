@@ -1,0 +1,299 @@
+.shop-main,
+.account-main {
+    width: min(1120px, calc(100% - 3rem));
+    margin: 0 auto;
+    padding: 8rem 0 4rem;
+}
+.shop-heading {
+    margin: 1rem 0 3.5rem;
+    text-align: center;
+}
+.shop-kicker {
+    margin: 0 0 .75rem;
+    color: #9b7123;
+    font-family: 'Nova Flat', sans-serif;
+    font-size: .8rem;
+    letter-spacing: .18rem;
+}
+.shop-heading h1,
+.account-welcome h1 {
+    margin: 0;
+    color: #17140F;
+    font-family: 'Inria Serif', serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+}
+.shop-heading > p:not(.shop-kicker) {
+    margin: .5rem 0 1rem;
+    color: #46201F;
+    font-family: 'Inria Serif', serif;
+    font-size: 1.2rem;
+}
+.shop-heading > a,
+.section-title > a {
+    color: #782E2E;
+    font-family: 'Inria Sans', sans-serif;
+    text-underline-offset: .25rem;
+}
+.wine-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+}
+.wine-card {
+    overflow: hidden;
+    border: 1px solid #e2d8ca;
+    background: #fffdf9;
+    box-shadow: 0 8px 22px rgb(23 20 15 / 8%);
+}
+.wine-card__image {
+    display: grid;
+    height: 340px;
+    place-items: center;
+    background: #f1ece4;
+}
+.wine-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform .25s ease;
+}
+.wine-card__image:hover img {
+    transform: scale(1.04);
+}
+.wine-card__details {
+    display: grid;
+    gap: .6rem;
+    padding: 1.25rem;
+}
+.wine-card__type {
+    margin: 0;
+    color: #9b7123;
+    font-family: 'Nova Flat', sans-serif;
+    font-size: .75rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+.wine-card__details h2,
+.wine-card__details h3 {
+    margin: 0;
+    color: #46201F;
+    font-family: 'Inria Serif', serif;
+    font-size: 1.5rem;
+}
+.wine-card__details > p:not(.wine-card__type) {
+    min-height: 2.7rem;
+    margin: 0;
+    color: #665e55;
+    font-family: 'Inria Sans', sans-serif;
+    line-height: 1.45;
+}
+.wine-card__details > strong {
+    color: #17140F;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 1.15rem;
+}
+.shop-button,
+.account-button {
+    display: inline-flex;
+    min-height: 2.8rem;
+    align-items: center;
+    justify-content: center;
+    padding: .75rem 1rem;
+    border: 1px solid #17140F;
+    background: #17140F;
+    color: #FFF9F2;
+    font-family: 'Nova Flat', sans-serif;
+    letter-spacing: .1rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.shop-button:hover,
+.account-button:hover {
+    background: #46201F;
+}
+.shop-button:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+.account-page .account-main {
+    display: none;
+}
+.account-page.account-authorized .account-main {
+    display: block;
+}
+.account-welcome,
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.account-welcome > div > p:last-child {
+    color: #665e55;
+    font-family: 'Inria Sans', sans-serif;
+}
+.account-button {
+    letter-spacing: 0;
+}
+.customer-summary {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 2rem 0 4rem;
+}
+.customer-summary article {
+    display: grid;
+    gap: .65rem;
+    padding: 1.25rem;
+    border-left: 3px solid #9b7123;
+    background: #f1ece4;
+    font-family: 'Inria Sans', sans-serif;
+}
+.customer-summary article span {
+    color: #665e55;
+}
+.customer-summary article strong {
+    color: #46201F;
+    font-family: 'Inria Serif', serif;
+    font-size: 1.7rem;
+}
+.customer-section {
+    margin: 3.5rem 0;
+}
+.section-title {
+    margin-bottom: 1.5rem;
+}
+.section-title h2 {
+    margin: 0;
+    color: #46201F;
+    font-family: 'Inria Serif', serif;
+    font-size: 2rem;
+}
+.wine-grid--compact {
+    gap: 1rem;
+}
+.wine-card--compact .wine-card__image {
+    height: 230px;
+}
+.wine-card--compact .wine-card__details h3 {
+    font-size: 1.2rem;
+}
+.customer-cart {
+    border-top: 1px solid #d8cfc2;
+}
+.empty-cart,
+.admin-note {
+    color: #665e55;
+    font-family: 'Inria Sans', sans-serif;
+}
+.cart-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #d8cfc2;
+    font-family: 'Inria Sans', sans-serif;
+}
+.cart-row img {
+    width: 3.5rem;
+    height: 4rem;
+    object-fit: contain;
+    background: #f1ece4;
+}
+.cart-row div {
+    display: grid;
+    flex: 1;
+    gap: .3rem;
+}
+.cart-row button {
+    border: 0;
+    background: transparent;
+    color: #782E2E;
+    cursor: pointer;
+}
+.inventory-table-wrap {
+    overflow-x: auto;
+}
+.inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Inria Sans', sans-serif;
+    text-align: left;
+}
+.inventory-table th,
+.inventory-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #d8cfc2;
+}
+.inventory-table th {
+    background: #46201F;
+    color: #FFF9F2;
+    font-weight: 400;
+}
+.inventory-table td:first-child small {
+    display: block;
+    margin-top: .35rem;
+    color: #665e55;
+}
+.inventory-table input {
+    width: 7rem;
+    box-sizing: border-box;
+    padding: .55rem;
+    border: 1px solid #b8ab99;
+    font: inherit;
+}
+.shop-button--small {
+    min-height: 2.2rem;
+    padding: .45rem .7rem;
+    font-size: .75rem;
+}
+.order-list {
+    border-top: 1px solid #d8cfc2;
+    font-family: 'Inria Sans', sans-serif;
+}
+.order-list article {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #d8cfc2;
+}
+.order-list article b {
+    text-align: right;
+}
+@media (max-width: 760px) {
+    .wine-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+    .wine-card__image {
+        height: 260px;
+    }
+}
+@media (max-width: 520px) {
+    .shop-main,
+    .account-main {
+        width: min(100% - 2rem, 420px);
+    }
+    .wine-grid,
+    .customer-summary {
+        grid-template-columns: 1fr;
+    }
+    .account-welcome {
+        align-items: flex-start;
+    }
+    .account-welcome h1 {
+        font-size: 2.4rem;
+    }
+    .wine-card__image {
+        height: 320px;
+    }
+    .order-list article {
+        grid-template-columns: 1fr auto;
+    }
+    .order-list article span {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+}

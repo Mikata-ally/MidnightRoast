@@ -19,3 +19,13 @@ or `contact` when applicable, add the three component mount points, and include:
 ```
 
 Use root-relative-to-project paths instead of the `../` prefix for a root page.
+
+## Demo accounts
+
+- Customer: `customer@midnightroast.test` / `roast123`
+- Admin: `admin@midnightroast.test` / `cellar123`
+
+The public wine catalog is available without signing in at `pages/wines.html`.
+The customer and admin screens use browser storage for this front-end demo only;
+the credentials and role checks are not secure authentication and do not replace
+a server-side account system. Google sign-in is a visual placeholder.
