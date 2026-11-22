@@ -30,11 +30,11 @@ function initializeCartPrompt() {
 
     document.querySelectorAll(".cart-link, .auth-open, .auth-modal-trigger").forEach((trigger) => {
         trigger.addEventListener("click", (event) => {
-            if (trigger.matches("a")) event.preventDefault();
-            if (trigger.matches(".cart-link") && readDemoSession()?.role === "customer") {
-                window.location.href = `${document.body.dataset.root || ""}pages/customer.html#cart`;
+            if (trigger.matches(".cart-link")) {
+                window.location.href = `${document.body.dataset.root || ""}pages/wines.html`;
                 return;
             }
+            if (trigger.matches("a")) event.preventDefault();
             openModal();
         });
     });
