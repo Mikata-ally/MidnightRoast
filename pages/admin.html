@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,19 +15,46 @@
     <div data-component="header"></div>
     <main class="account-main">
         <section class="account-welcome">
-            <div><p class="shop-kicker">MIDNIGHT ROAST · ADMIN</p><h1>Dashboard</h1><p>Manage the demo wine catalog and review store activity.</p></div>
+            <div><p class="shop-kicker">MIDNIGHT ROAST Â· ADMIN</p><h1>Dashboard</h1><p>Manage the demo wine catalog and review store activity.</p></div>
             <button class="account-button" id="sign-out" type="button">Sign out</button>
         </section>
-        <section class="customer-summary admin-summary">
+        <section class="customer-summary admin-summary admin-finance" aria-label="Store financial analytics">
+            <article><span>Income</span><strong id="admin-income">&#8369; 10,605</strong><small>Demo payments received</small></article>
+            <article><span>Gross revenue</span><strong id="admin-gross-revenue">&#8369; 10,605</strong><small>Two sample orders</small></article>
+            <article><span>Cost of goods sold</span><strong id="admin-cogs">&#8369; 4,242</strong><small>Estimated at 40% of sales</small></article>
+            <article><span>Net profit</span><strong id="admin-net-profit">&#8369; 4,863</strong><small>After estimated expenses</small></article>
+            <article><span>Operating expenses</span><strong id="admin-operating-expenses">&#8369; 1,500</strong><small>Sample monthly expenses</small></article>
             <article><span>Catalog wines</span><strong id="admin-product-count">0</strong></article>
             <article><span>Units in stock</span><strong id="admin-stock-count">0</strong></article>
             <article><span>Demo orders</span><strong>2</strong></article>
+        </section>
+        <section class="customer-section admin-analytics" aria-label="Demo financial charts">
+            <div class="section-title"><div><p class="shop-kicker">SAMPLE REPORT</p><h2>Store analytics</h2></div><span class="demo-badge">DEMO DATA</span></div>
+            <div class="analytics-grid">
+                <article class="analytics-card">
+                    <h3>Revenue by month</h3><p>Illustrative gross revenue (&#8369;)</p>
+                    <div class="bar-chart" role="img" aria-label="Revenue: January 7,200 pesos, February 8,450 pesos, March 10,605 pesos">
+                        <div class="bar-chart__item"><span class="bar-chart__value">&#8369; 7,200</span><div class="bar-chart__bar" style="--bar-height:54%"></div><span>Jan</span></div>
+                        <div class="bar-chart__item"><span class="bar-chart__value">&#8369; 8,450</span><div class="bar-chart__bar" style="--bar-height:70%"></div><span>Feb</span></div>
+                        <div class="bar-chart__item"><span class="bar-chart__value">&#8369; 10,605</span><div class="bar-chart__bar" style="--bar-height:90%"></div><span>Mar</span></div>
+                    </div>
+                </article>
+                <article class="analytics-card">
+                    <h3>March revenue breakdown</h3><p>How sample sales are allocated</p>
+                    <div class="breakdown-chart" role="img" aria-label="March revenue: cost of goods 4,242 pesos, operating expenses 1,500 pesos, net profit 4,863 pesos">
+                        <div><span><i class="legend-dot legend-dot--cogs"></i>Cost of goods</span><strong>&#8369; 4,242</strong><div class="breakdown-track"><i class="breakdown-fill breakdown-fill--cogs"></i></div></div>
+                        <div><span><i class="legend-dot legend-dot--expenses"></i>Operating expenses</span><strong>&#8369; 1,500</strong><div class="breakdown-track"><i class="breakdown-fill breakdown-fill--expenses"></i></div></div>
+                        <div><span><i class="legend-dot legend-dot--profit"></i>Net profit</span><strong>&#8369; 4,863</strong><div class="breakdown-track"><i class="breakdown-fill breakdown-fill--profit"></i></div></div>
+                    </div>
+                </article>
+            </div>
+            <p class="admin-note">All financial figures and charts are illustrative demo data, not actual business records.</p>
         </section>
         <section class="customer-section">
             <div class="section-title"><div><p class="shop-kicker">INVENTORY</p><h2>Wine catalog</h2></div><a href="wines.html">View public shop</a></div>
             <div class="inventory-table-wrap">
                 <table class="inventory-table">
-                    <thead><tr><th>Wine</th><th>Price (₱)</th><th>Stock</th><th>Save</th></tr></thead>
+                    <thead><tr><th>Wine</th><th>Price (â‚±)</th><th>Stock</th><th>Save</th></tr></thead>
                     <tbody id="inventory-body"></tbody>
                 </table>
             </div>
@@ -35,7 +62,7 @@
         </section>
         <section class="customer-section">
             <div class="section-title"><div><p class="shop-kicker">RECENT ACTIVITY</p><h2>Demo orders</h2></div></div>
-            <div class="order-list"><article><strong>MR-1024</strong><span>Customer order · Preparing</span><b>₱ 6,185</b></article><article><strong>MR-1023</strong><span>Customer order · Delivered</span><b>₱ 4,420</b></article></div>
+            <div class="order-list"><article><strong>MR-1024</strong><span>Customer order Â· Preparing</span><b>â‚± 6,185</b></article><article><strong>MR-1023</strong><span>Customer order Â· Delivered</span><b>â‚± 4,420</b></article></div>
         </section>
     </main>
     <div data-component="footer"></div>

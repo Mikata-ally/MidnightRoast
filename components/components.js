@@ -17,10 +17,10 @@ window.SiteComponents = {
                         <ul class="menu">
                             <li><a id="${activePage === "home" ? "home" : ""}" href="${root}index.html" ${activePage === "home" ? 'aria-current="page"' : ""}>HOME</a></li>
                             <li><a id="${activePage === "our-story" ? "ourStory" : ""}" href="${root}pages/our-story.html" ${activePage === "our-story" ? 'aria-current="page"' : ""}>OUR STORY</a></li>
-                            <li><a id="${activePage === "wines" ? "Store" : ""}" href="${root}pages/wines.html" ${activePage === "wines" ? 'aria-current="page"' : ""}>STORE</a></li>
+                            <li><a id="${activePage === "store" ? "Store" : ""}" href="${root}pages/store.html" ${activePage === "store" ? 'aria-current="page"' : ""}>STORE</a></li>
                             <li><a id="${activePage === "contact" ? "contact" : ""}" href="${root}pages/contact-us.html" ${activePage === "contact" ? 'aria-current="page"' : ""}>CONTACT US</a></li>
                             <li>${session?.role ? `<a href="${root}pages/${session.role}.html">${session.role === "admin" ? "ADMIN" : "MY ACCOUNT"}</a>` : '<a class="auth-open" href="#">SIGN IN</a>'}</li>
-                            <li><a class="cart-link" href="#" aria-label="Shopping cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                            <li><a class="cart-link" href="${root}pages/wines.html" aria-label="Shopping cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
                         </ul>
                     </nav>
                 </header>`;
